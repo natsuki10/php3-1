@@ -1,0 +1,28 @@
+.button-link {
+    display: inline-block;
+    padding: 1px 6px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  .button-link:hover {
+    background-color: #e0e0e0;
+  }
+  .submit{
+    display: inline-block;
+    padding: 1px 6px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  .post-item {
+    border: 2px double #00bfff;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
