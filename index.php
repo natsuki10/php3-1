@@ -48,7 +48,6 @@ try {
     <form method="POST" action="index.php">
         <label for="name">name:</label>
         <input type="text" id="name" name="name" required><br><br>
-        
         <label for="content">投稿内容:</label><br>
         <textarea id="content" name="content" required></textarea><br>
         <input class="submit" type="submit" value="投稿する">
@@ -70,6 +69,10 @@ try {
                 <span>投稿内容:</span>
                 <span><?php echo $post['content']; ?></span>
             </div>
+            <form method="POST" action="delete.php">
+                <input type="hidden" name="delete" value="<?php echo $post['id'] ?>">
+                <input class="submit" type="submit" value="削除">
+            </form>
         </div>
     <?php endforeach; ?>
     </div>
