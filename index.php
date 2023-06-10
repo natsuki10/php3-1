@@ -69,6 +69,10 @@ try {
                 <span>投稿内容:</span>
                 <span><?php echo $post['content']; ?></span>
             </div>
+            <form method="GET" action="edit.php">
+                <input type="hidden" name="id" value="<?php echo $post['id']; ?>">
+            <input class="submit" type="submit" value="編集" >
+            </form>
             <form method="POST" action="delete.php">
                 <input type="hidden" name="delete" value="<?php echo $post['id'] ?>">
                 <input class="submit" type="submit" value="削除">
